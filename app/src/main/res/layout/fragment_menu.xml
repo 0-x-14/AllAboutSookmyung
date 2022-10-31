@@ -7,9 +7,10 @@
     tools:context=".MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="기타페이지 화면" />
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
 
 </FrameLayout>
