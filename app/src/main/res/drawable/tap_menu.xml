@@ -6,4 +6,5 @@
     <item
         android:drawable="@drawable/ic_tap_menu_selected"
         android:state_checked="true"/>
+
 </selector>
