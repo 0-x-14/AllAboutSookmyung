@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
     android:orientation="vertical"
-    android:backgroundTint="#F0F6FF">
+    android:background="@drawable/background_color">
 
     <!-- TODO: 검색바 구현을 위한 리니어 틀 for 정은 -->
     <androidx.constraintlayout.widget.ConstraintLayout
