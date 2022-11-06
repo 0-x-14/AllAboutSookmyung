@@ -19,6 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="300dp">
 
+
+
         </LinearLayout>
 
         <!-- 3x3 icon 구현 -->
@@ -115,10 +117,6 @@
                     android:background="@drawable/ic_menu_icon9" />
 
             </LinearLayout>
-
         </LinearLayout>
-
     </LinearLayout>
-
-
 </FrameLayout>
