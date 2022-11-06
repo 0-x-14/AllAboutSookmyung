@@ -5,18 +5,18 @@
         android:id="@+id/tab_map"
         android:enabled="true"
         android:icon="@drawable/tap_map"
-        android:title="지도" />
+        android:title="지도"/>
 
     <item
         android:id="@+id/tab_home"
         android:enabled="true"
         android:icon="@drawable/tap_home"
-        android:title="홈" />
+        android:title="홈"/>
 
     <item
         android:id="@+id/tab_menu"
         android:enabled="true"
         android:icon="@drawable/tap_menu"
-        android:title="메뉴" />
+        android:title="메뉴"/>
 
 </menu>

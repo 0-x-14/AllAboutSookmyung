@@ -17,8 +17,7 @@
         <!-- TODO: 마이페이지 구현 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp">
-
+            android:layout_height="300dp">
         </LinearLayout>
 
         <!-- 3x3 icon 구현 -->
@@ -38,22 +37,22 @@
 
                 <Button
                     android:id="@+id/button1"
-                    android:layout_width="96dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon1" />
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/ic_menu_icon2" />
 
                 <Button
                     android:id="@+id/button3"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon3" />
 
             </LinearLayout>
@@ -67,22 +66,22 @@
 
                 <Button
                     android:id="@+id/button4"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon4"/>
 
                 <Button
                     android:id="@+id/button5"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/ic_menu_icon5"/>
 
                 <Button
                     android:id="@+id/button6"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon6"/>
 
             </LinearLayout>
@@ -96,22 +95,22 @@
 
                 <Button
                     android:id="@+id/button7"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon7"/>
 
                 <Button
                     android:id="@+id/button8"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon8"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"/>
 
                 <Button
                     android:id="@+id/button9"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon9"/>
 
             </LinearLayout>

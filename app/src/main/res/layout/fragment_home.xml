@@ -19,7 +19,7 @@
     <!-- TODO: 검색바 구현을 위한 리니어 틀 for 정은 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="100dp">
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_view"
@@ -38,7 +38,7 @@
     <!-- TODO: 메인버튼 구현을 위한 상대레이아웃틀 for 주영언니 -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp">
+        android:layout_height="554dp">
 
     </RelativeLayout>
 
