@@ -33,17 +33,12 @@
                 android:background="@drawable/my_page"
                 android:orientation="horizontal">
 
-            </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나의 학과"/>
 
-            <ImageView
-                android:id="@+id/noonsongface"
-                android:layout_width="61dp"
-                android:layout_height="43dp"
-                android:layout_above="@+id/my_page_frame"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="152dp"
-                android:layout_marginBottom="-21dp"
-                android:background="@drawable/ic_noonsong_face" />
+            </LinearLayout>
 
         </RelativeLayout>
 
