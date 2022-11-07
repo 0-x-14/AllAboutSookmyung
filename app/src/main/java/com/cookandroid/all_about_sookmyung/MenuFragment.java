@@ -1,5 +1,6 @@
 package com.cookandroid.all_about_sookmyung;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -46,13 +48,34 @@ public class MenuFragment extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState, View inflater) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        View v = inflater.inflate(R.layout.activity_main, container, false);
+
+        Button majorbutton2 = (Button) v.findViewById(R.id.majorbutton2);
+        majorbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MajorActivity.class);
+                startActivity(intent);
+            }
+        });
+        // majorbutton을 누르면 학과정보 페이지로 넘어감
+
+        Button plugbutton = (Button) v.findViewById(R.id.plugbutton);
+        plugbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MajorActivity.class);
+                startActivity(intent);
+            }
+        });
+        // plugbutton을 누르면 학과정보 페이지로 넘어감
     }
 
     @Override
