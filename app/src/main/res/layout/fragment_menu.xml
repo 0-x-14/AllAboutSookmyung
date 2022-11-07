@@ -98,7 +98,8 @@
                     android:id="@+id/button7"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
-                    android:background="@drawable/ic_menu_icon7"/>
+                    android:background="@drawable/ic_menu_icon7"
+                    android:onClick="onClick"/>
 
                 <Button
                     android:id="@+id/button8"
@@ -106,13 +107,15 @@
                     android:layout_height="90dp"
                     android:background="@drawable/ic_menu_icon8"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:onClick="onClick"/>
 
                 <Button
                     android:id="@+id/button9"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
-                    android:background="@drawable/ic_menu_icon9"/>
+                    android:background="@drawable/ic_menu_icon9"
+                    android:onClick="onClick"/>
 
             </LinearLayout>
 

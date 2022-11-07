@@ -1,5 +1,7 @@
 package com.cookandroid.all_about_sookmyung;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -53,6 +55,8 @@ public class MenuFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
@@ -60,5 +64,24 @@ public class MenuFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_menu, container, false);
+    }
+
+    public void onClick(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        switch (v.getId()){
+            case R.id.button7:
+                intent.setData(Uri.parse("tel:010-1234-5678"));
+                startActivity(intent);
+                break;
+            case R.id.button8:
+                intent.setData(Uri.parse("https://portal.sookmyung.ac.kr/"));
+                startActivity(intent);
+                break;
+            case R.id.button9:
+                Intent intent1 = new Intent(v.getContext(), TutorialActivity.class);
+                startActivity(intent1);
+                //finish();
+                break;
+        }
     }
 }
