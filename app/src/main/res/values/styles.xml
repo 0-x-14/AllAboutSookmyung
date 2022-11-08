@@ -4,4 +4,9 @@
         parent="Widget.Design.BottomNavigationView">
         <item name="fontFamily">@font/nanumsquareroundextrabold</item>
     </style>
+
+    <style name="spinnerTheme"
+        parent="android:style/Widget.ListView.DropDown">
+        <item name="fontFamily">@font/nanumsquareroundregular</item>
+    </style>
 </resources>

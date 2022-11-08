@@ -32,8 +32,16 @@ public class MenuFragment extends Fragment {
 
     private Spinner spinner;
     TextView student_room, department_office, locker;
-    String[] student_room_list = {};
-    String[] department_office_list = {};
+    String[] student_room_list = { "명신관324", "명신관220b", "명신관219", "-", "-", "명신관323", "명신관623b", "르네상스B207 (지하 2층)", "르네상스B209B", "순헌관508b",
+                                "명신관312b", "순헌관510a", "명신관321a", "명신관220a", "(추후 업데이트)", "순헌관414b", "(추후 업데이트)", "(추후 업데이트)", "-", "명신관623c",
+                                "명신관311a", "(추후 업데이트)", "(추후 업데이트)", "명신관208b", "(추후 업데이트)", "명신관324", "명신관623b", "(추후 업데이트)", "순헌관508a",
+                                "명신관311b", "순헌관510b", "명신관504", "순헌관508d", "-", "명신관218a", "순헌관508c", "(추후 업데이트)", "명신관312a", "명신관311b",
+                                "(추후 업데이트)", "순헌관508b", "-", "명신관208a", "순헌관 지하", "명신관623a", "과학관451", "과학관260", "(추후 업데이트)", "(추후 업데이트)" };
+    String[] department_office_list = { "순헌관323", "순헌관316A", "순헌관315", "미술대210", "음대201", "순헌관921", "백주년기념관512", "르네상스플라자 501", "르네상스플라자 501",
+                                        "순헌관316B", "진리관302", "순헌관220", "새힘관205", "새힘관201", "진리관209", "순헌관721", "미술대210", "과학관101", "음대201",
+                                        "순헌관312", "명신관425", "사회교육관416", "미술대210", "순헌관323", "과학관209", "순헌관323", "백주년기념관512", "(추후 업데이트)",
+                                        "순헌관412", "진리관303", "순헌관323", "명신관513", "순헌관602", "음대201", "순헌관313", "순헌관311", "르네상스플라자 501", "진리관304",
+                                        "진리관303", "사회교육관512", "순헌관314", "음대201", "순헌관411", "순헌관313", "순헌관312", "과학관463", "과학관101", "미술대210", "미술대210" };
 
     public MenuFragment() {
         // Required empty public constructor
@@ -87,9 +95,7 @@ public class MenuFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 student_room.setText(student_room_list[position]);
                 department_office.setText(department_office_list[position]);
-                Toast.makeText(getActivity(),"선택된 학과 : "+spinner.getItemAtPosition(position),Toast.LENGTH_SHORT).show();
-            } //이 오버라이드 메소드에서 position은 몇번째 값이 클릭됬는지 알 수 있습니다.
-            //getItemAtPosition(position)를 통해서 해당 값을 받아올수있습니다.
+            }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
