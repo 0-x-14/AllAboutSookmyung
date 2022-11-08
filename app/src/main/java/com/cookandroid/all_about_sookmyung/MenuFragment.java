@@ -1,5 +1,6 @@
 package com.cookandroid.all_about_sookmyung;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -99,6 +101,16 @@ public class MenuFragment extends Fragment {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
+        });
+
+        Button btnNew = (Button) view.findViewById(R.id.lockerSetButton);
+        btnNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SetLocker.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
         });
 
         return view;
