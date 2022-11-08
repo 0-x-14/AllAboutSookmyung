@@ -63,6 +63,5 @@ public class MainActivity extends AppCompatActivity {
             }
             return false;
         }
-        // test 왜 안 올라가지
     }
 }
