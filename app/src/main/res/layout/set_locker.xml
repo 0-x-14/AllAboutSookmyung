@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/nanumsquareroundbold"
+            android:text="사물함의 위치를 입력해주세요."
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editLocker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:hint="명신관 1층 96번"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nanumsquareroundregular"/>
+    <!--
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내힘들다"/>
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
 
-    <Button
-        android:id="@+id/btnTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1E0F9"
+            android:text="입력"
+            android:textColor="#2060aa"
+            android:fontFamily="@font/nanumsquareroundbold"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1E0F9"
+            android:text="취소"
+            android:textColor="#2060aa"
+            android:fontFamily="@font/nanumsquareroundbold"/>
+
+    </LinearLayout> -->
+
 
 </LinearLayout>

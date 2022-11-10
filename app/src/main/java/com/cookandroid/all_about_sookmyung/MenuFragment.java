@@ -1,8 +1,11 @@
 package com.cookandroid.all_about_sookmyung;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -11,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,7 +36,9 @@ public class MenuFragment extends Fragment {
     private String mParam2;
     private ArrayAdapter<String> adapter;
 
+    // 스피너 관련
     private Spinner spinner;
+    static final String STU_ROOM = "과방", DEP_OFF = "과사", LOC = "사물함";
     TextView student_room, department_office, locker;
     String[] student_room_list = { "명신관324", "명신관220b", "명신관219", "-", "-", "명신관323", "명신관623b", "르네상스B207 (지하 2층)", "르네상스B209B", "순헌관508b",
                                 "명신관312b", "순헌관510a", "명신관321a", "명신관220a", "(추후 업데이트)", "순헌관414b", "(추후 업데이트)", "(추후 업데이트)", "-", "명신관623c",
@@ -44,6 +50,10 @@ public class MenuFragment extends Fragment {
                                         "순헌관312", "명신관425", "사회교육관416", "미술대210", "순헌관323", "과학관209", "순헌관323", "백주년기념관512", "(추후 업데이트)",
                                         "순헌관412", "진리관303", "순헌관323", "명신관513", "순헌관602", "음대201", "순헌관313", "순헌관311", "르네상스플라자 501", "진리관304",
                                         "진리관303", "사회교육관512", "순헌관314", "음대201", "순헌관411", "순헌관313", "순헌관312", "과학관463", "과학관101", "미술대210", "미술대210" };
+
+    // 사물함
+    EditText editLocker;
+    View dialogView;
 
     public MenuFragment() {
         // Required empty public constructor
@@ -76,6 +86,20 @@ public class MenuFragment extends Fragment {
         }
     }
 
+    /*
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        String studentRoomStr, departmentOfficeStr, lockerStr;
+        studentRoomStr = student_room.getText().toString();
+        departmentOfficeStr = department_office.getText().toString();
+        lockerStr = locker.getText().toString();
+        outState.putString(STU_ROOM, studentRoomStr);
+        outState.putString(DEP_OFF, departmentOfficeStr);
+        outState.putString(LOC, lockerStr);
+    }*/
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -85,6 +109,17 @@ public class MenuFragment extends Fragment {
         student_room = (TextView) view.findViewById(R.id.studentRoom);
         department_office = (TextView) view.findViewById(R.id.departmentOffice);
         locker = (TextView) view.findViewById(R.id.locker);
+
+        /*if (savedInstanceState != null) {
+            String studentRoomStr, departmentOfficeStr, lockerStr;
+            studentRoomStr = savedInstanceState.getString(STU_ROOM);
+            departmentOfficeStr = savedInstanceState.getString(DEP_OFF);
+            lockerStr = savedInstanceState.getString(LOC);
+
+            student_room.setText(studentRoomStr);
+            department_office.setText(departmentOfficeStr);
+            locker.setText(lockerStr);
+        }*/
 
         spinner = (Spinner) view.findViewById(R.id.spinner);
 
@@ -103,13 +138,20 @@ public class MenuFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) { }
         });
 
-        Button btnNew = (Button) view.findViewById(R.id.lockerSetButton);
-        btnNew.setOnClickListener(new View.OnClickListener() {
+
+        Button lockerSetBtn = (Button) view.findViewById(R.id.lockerSetButton);
+        lockerSetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), SetLocker.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(intent);
+                DialogFragment dialogFragment = DialogFragment.newInstance(new DialogFragment.NameInputListener() {
+                    @Override
+                    public void onNameInputComplete(String name) {
+                        if (name != null){
+                            locker.setText(name);
+                        }
+                    }
+                });
+                dialogFragment.show(getFragmentManager(), "사물함");
             }
         });
 
