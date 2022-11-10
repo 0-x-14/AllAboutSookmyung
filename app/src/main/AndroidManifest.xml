@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ClassActivity"></activity>
+        <activity android:name=".ConvenientActivity"></activity>
+        <activity android:name=".PlugActivity"></activity>
+        <activity android:name=".MajorActivity"></activity>
+
     </application>
 
 </manifest>

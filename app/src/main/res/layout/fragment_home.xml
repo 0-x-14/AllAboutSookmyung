@@ -53,9 +53,9 @@
             android:backgroundTint="?android:attr/panelBackground"
             android:backgroundTintMode="add"
             android:drawableTop="@drawable/majorinfo"
-            tools:ignore="SpeakableTextPresentCheck" />
-        // 강의실 정보 버튼
-        // 상세한 버튼 위치의 경우 figma에서 확인이 어려워 임의로 지정함
+            tools:ignore="SpeakableTextPresentCheck"
+
+            />
 
         <Button
             android:id="@+id/convenientbutton"

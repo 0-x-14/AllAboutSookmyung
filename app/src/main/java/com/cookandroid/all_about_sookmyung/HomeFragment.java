@@ -1,8 +1,10 @@
 package com.cookandroid.all_about_sookmyung;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -26,6 +28,8 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private View v;
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -39,6 +43,7 @@ public class HomeFragment extends Fragment {
      * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
+
     public static HomeFragment newInstance(String param1, String param2) {
         HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
@@ -54,8 +59,13 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
 
-        // setContentView(R.layout.activity_main);
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         Button classbutton = (Button) v.findViewById(R.id.classbutton);
@@ -87,12 +97,6 @@ public class HomeFragment extends Fragment {
             }
         });
         // convenientbutton을 누르면 편의시설 정보 페이지로 넘어감
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return v;
     }
 }

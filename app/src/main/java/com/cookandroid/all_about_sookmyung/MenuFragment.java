@@ -26,6 +26,8 @@ public class MenuFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    View v;
+
     public MenuFragment() {
         // Required empty public constructor
     }
@@ -54,8 +56,13 @@ public class MenuFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
 
-        View v = inflater.inflate(R.layout.activity_main, container, false);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        v = inflater.inflate(R.layout.fragment_menu, container, false);
 
         Button majorbutton2 = (Button) v.findViewById(R.id.majorbutton2);
         majorbutton2.setOnClickListener(new View.OnClickListener() {
@@ -71,17 +78,13 @@ public class MenuFragment extends Fragment {
         plugbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), MajorActivity.class);
+                Intent intent = new Intent(getActivity(), PlugActivity.class);
                 startActivity(intent);
             }
         });
         // plugbutton을 누르면 학과정보 페이지로 넘어감
+
+        return v;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
-    }
 }

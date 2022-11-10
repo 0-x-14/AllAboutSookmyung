@@ -15,7 +15,6 @@
         android:text="학과정보 페이지 뒤로가기 (임의)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    // 메인페이지로 돌아가는 버튼
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

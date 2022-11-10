@@ -2,6 +2,9 @@ package com.cookandroid.all_about_sookmyung;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         init();
         SettingListener();
 
+        // FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        // fragmentTransaction.add(R.id.home_ly, HomeFragment.newInstance).commit();
+
         bottomNavigationView.setSelectedItemId(R.id.home);
     }
 
@@ -37,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
         // 선택 리스너 등록
         bottomNavigationView.setOnNavigationItemSelectedListener(new TabSelectedListener());
     }
+
+    /*
+    public void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.home_ly, fragment).commit();
+    }
+
+     */
 
     class TabSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener {
         @Override
