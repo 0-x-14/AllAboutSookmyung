@@ -3,16 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/black">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="튜토리얼 첫번째 페이지"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/page1_center"
+        android:layout_width="190dp"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"
+        app:srcCompat="@drawable/tutorial_home" />
+
+    <ImageView
+        android:id="@+id/page1_right"
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/page1_center"
+        app:layout_constraintTop_toTopOf="@+id/page1_center"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tutorial_gitar_cut" />
+
+    <ImageView
+        android:id="@+id/page1_left"
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/page1_center"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/page1_center"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tutorial_map_cut" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다!"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/page1_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하단 탭을 통해 이동 가능"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_center"
+        app:layout_constraintVertical_bias="0.23000002" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,31 +58,44 @@ public class MenuFragment extends Fragment {
         }
 
 
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        View v = inflater.inflate(R.layout.fragment_menu, container, false);
+
+        Button printbutton = (Button)v.findViewById(R.id.button7);
+        Button potalbutton = (Button)v.findViewById(R.id.button8);
+        Button tutorialbutton = (Button)v.findViewById(R.id.button9);
+
+        printbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PrintActivity.class);
+                startActivity(intent);
+            }
+        });
+        potalbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://smsso.sookmyung.ac.kr/sso/auth?&client_id=EP&response_type=code&state=1668411833546&p_sid=null&rd_c_p=loginparam"));
+                startActivity(intent);
+            }
+        });
+        tutorialbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), TutorialActivity.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
+        return v;
     }
 
-    public void onClick(View v){
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        switch (v.getId()){
-            case R.id.button7:
-                intent.setData(Uri.parse("tel:010-1234-5678"));
-                startActivity(intent);
-                break;
-            case R.id.button8:
-                intent.setData(Uri.parse("https://portal.sookmyung.ac.kr/"));
-                startActivity(intent);
-                break;
-            case R.id.button9:
-                Intent intent1 = new Intent(v.getContext(), TutorialActivity.class);
-                startActivity(intent1);
-                //finish();
-                break;
-        }
-    }
+
 }
