@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="40dp"
+    android:background="@drawable/classroom_border">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="(강의실 호수)"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_classroom_plug_absence"/>
+
+            <TextView
+                android:id="@+id/plugText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="콘센트가 OO요"
+                android:fontFamily="@font/nanumsquareroundbold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_classroom_backdoor_existed" />
+
+            <TextView
+                android:id="@+id/backdoorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒷문이 OO요"
+                android:fontFamily="@font/nanumsquareroundbold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_classroom_stair"/>
+
+            <TextView
+                android:id="@+id/kindText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계단강의실이에요"
+                android:fontFamily="@font/nanumsquareroundbold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_classroom_backdoor_existed" />
+
+            <TextView
+                android:id="@+id/timeTableText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="=>강의시간표"
+                android:textColor="#3366BB"
+                android:fontFamily="@font/nanumsquareroundbold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,8 +1,10 @@
 package com.cookandroid.all_about_sookmyung;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -38,6 +40,7 @@ public class MenuFragment extends Fragment {
 
     // 스피너 관련
     private Spinner spinner;
+    //private int spinnerSelection = 0;
     static final String STU_ROOM = "과방", DEP_OFF = "과사", LOC = "사물함";
     TextView student_room, department_office, locker;
     String[] student_room_list = { "명신관324", "명신관220b", "명신관219", "-", "-", "명신관323", "명신관623b", "르네상스B207 (지하 2층)", "르네상스B209B", "순헌관508b",
@@ -86,8 +89,7 @@ public class MenuFragment extends Fragment {
         }
     }
 
-    /*
-    @Override
+    /*@Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
 
@@ -101,6 +103,23 @@ public class MenuFragment extends Fragment {
     }*/
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("myPage", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.clear();
+        editor.commit();
+
+        String valLocker = locker.getText().toString();
+        int valSpinner = spinner.getSelectedItemPosition();
+        editor.putString("locker", valLocker);
+        editor.putInt("position", valSpinner);
+        editor.commit();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -109,6 +128,10 @@ public class MenuFragment extends Fragment {
         student_room = (TextView) view.findViewById(R.id.studentRoom);
         department_office = (TextView) view.findViewById(R.id.departmentOffice);
         locker = (TextView) view.findViewById(R.id.locker);
+
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("myPage", Context.MODE_PRIVATE);
+        String valLocker = sharedPreferences.getString("locker", "(사물함 정보)");
+        locker.setText(valLocker);
 
         /*if (savedInstanceState != null) {
             String studentRoomStr, departmentOfficeStr, lockerStr;
@@ -122,6 +145,8 @@ public class MenuFragment extends Fragment {
         }*/
 
         spinner = (Spinner) view.findViewById(R.id.spinner);
+        int valPosition = sharedPreferences.getInt("position", 0);
+        spinner.setSelection(valPosition);
 
         ArrayAdapter departmentAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.department_spinner_array, android.R.layout.simple_spinner_dropdown_item);
         departmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
