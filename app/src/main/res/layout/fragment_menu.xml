@@ -234,13 +234,13 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/studyroombutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon4" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/padspotbutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_marginLeft="20dp"
@@ -248,7 +248,7 @@
                     android:background="@drawable/ic_menu_icon5" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/foodspotbutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon6" />
