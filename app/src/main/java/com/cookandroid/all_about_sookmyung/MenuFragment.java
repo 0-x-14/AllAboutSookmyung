@@ -133,6 +133,10 @@ public class MenuFragment extends Fragment {
         String valLocker = sharedPreferences.getString("locker", "(사물함 정보)");
         locker.setText(valLocker);
 
+        Button studyroombutton=(Button) view.findViewById(R.id.studyroombutton);
+        Button padspotbutton=(Button) view.findViewById(R.id.padspotbutton);
+        Button foodspotbutton=(Button) view.findViewById(R.id.foodspotbutton);
+
         /*if (savedInstanceState != null) {
             String studentRoomStr, departmentOfficeStr, lockerStr;
             studentRoomStr = savedInstanceState.getString(STU_ROOM);
@@ -163,7 +167,6 @@ public class MenuFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) { }
         });
 
-
         Button lockerSetBtn = (Button) view.findViewById(R.id.lockerSetButton);
         lockerSetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -180,6 +183,30 @@ public class MenuFragment extends Fragment {
             }
         });
 
+
+        studyroombutton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getActivity(), StudyroomActivity.class);
+                startActivity(intent);
+            }
+        });
+        padspotbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),PadspotActivity.class);
+                startActivity(intent);
+            }
+        });
+        foodspotbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),FoodspotActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
+        //return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 }
