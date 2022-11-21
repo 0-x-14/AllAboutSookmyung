@@ -59,6 +59,7 @@ public class MenuFragment extends Fragment {
         }
     }
 
+    //이채원코드
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
