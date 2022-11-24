@@ -14,6 +14,7 @@ public class PlugAdapter extends BaseAdapter {
 
     Context context;
     ArrayList<PlugItem> PlugItem_ArrayList;
+    TextView building_textview;
     TextView floor_textview;
     TextView room_textview;
     TextView plug_textview;
@@ -43,12 +44,14 @@ public class PlugAdapter extends BaseAdapter {
     public View getView(int position, View view, ViewGroup viewGroup) {
         if (view == null) {
             view = LayoutInflater.from(context).inflate(R.layout.activity_plug_item, null);
+            building_textview = (TextView)view.findViewById(R.id.building_textview);
             floor_textview = (TextView)view.findViewById(R.id.floor_textview);
             room_textview = (TextView)view.findViewById(R.id.room_textview);
             plug_textview = (TextView)view.findViewById(R.id.plug_textview);
             etc_textview = (TextView)view.findViewById(R.id.etc_textview);
         }
 
+        building_textview.setText(PlugItem_ArrayList.get(position).getBuilding_textview());
         floor_textview.setText(PlugItem_ArrayList.get(position).getFloor_textview());
         room_textview.setText(PlugItem_ArrayList.get(position).getRoom_textview());
         plug_textview.setText(PlugItem_ArrayList.get(position).getPlug_textview());

@@ -2,10 +2,19 @@ package com.cookandroid.all_about_sookmyung;
 
 public class PlugItem {
     // plug의 아이템을 정의하는 클래스
+    private String building_textview;
     private String floor_textview;
     private String room_textview;
     private String plug_textview;
     private String etc_textview;
+
+    public String getBuilding_textview() {
+        return building_textview;
+    }
+
+    public void setBuilding_textview(String building_textview) {
+        this.building_textview = building_textview;
+    }
 
     public String getFloor_textview() {
         return floor_textview;
@@ -39,7 +48,8 @@ public class PlugItem {
         this.etc_textview = etc_textview;
     }
 
-    public PlugItem(String floor_textview, String room_textview, String plug_textview, String etc_textview) {
+    public PlugItem(String building_textview, String floor_textview, String room_textview, String plug_textview, String etc_textview) {
+        this.building_textview = building_textview;
         this.floor_textview = floor_textview;
         this.room_textview = room_textview;
         this.plug_textview = plug_textview;
