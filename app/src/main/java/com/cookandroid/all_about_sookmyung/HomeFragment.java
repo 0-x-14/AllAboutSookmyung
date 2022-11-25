@@ -67,36 +67,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-
-        Button classbutton = (Button) v.findViewById(R.id.classbutton);
-        classbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ClassActivity.class);
-                startActivity(intent);
-            }
-        });
-        // classbutton을 누르면 강의실 정보 페이지로 넘어감
-
-        Button majorbutton = (Button) v.findViewById(R.id.majorbutton);
-        majorbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), MajorActivity.class);
-                startActivity(intent);
-            }
-        });
-        // majorbutton을 누르면 학과정보 페이지로 넘어감
-
-        Button convenientbutton = (Button) v.findViewById(R.id.convenientbutton);
-        convenientbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ConvenientActivity.class);
-                startActivity(intent);
-            }
-        });
-        // convenientbutton을 누르면 편의시설 정보 페이지로 넘어감
         return v;
     }
 }

@@ -17,6 +17,7 @@ public class MajorAdapter extends BaseAdapter {
     TextView majorRoom_textview;
     TextView majorOffice_textview;
     TextView locker_textview;
+
     public MajorAdapter(Context context, ArrayList<MajorItem> majorItem_ArrayList) {
         this.context = context;
         MajorItem_ArrayList = majorItem_ArrayList;

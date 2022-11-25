@@ -20,7 +20,6 @@ public class MajorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_major);
-
         listView = (ListView)findViewById(R.id.major_listview);
 
         MajorItem_ArrayList = new ArrayList<MajorItem>();
@@ -49,7 +48,6 @@ public class MajorActivity extends AppCompatActivity {
         MajorItem_ArrayList.add(new MajorItem("행정학과", "-", "순헌관 313호", "명신관 2층 입구\n명신관 218AB호 사이\n명신관 5층 중앙\n명신관 616호 앞"));
         MajorItem_ArrayList.add(new MajorItem("홍보광고학과", "명신관 623A호", "순헌관 312호", "명신관 218AB호 사이\n명신관 219호 220호 사이"));
 
-        // 새힘관 및 기타 건물 추가
 
         majorAdapter = new MajorAdapter(MajorActivity.this, MajorItem_ArrayList);
         listView.setAdapter(majorAdapter);

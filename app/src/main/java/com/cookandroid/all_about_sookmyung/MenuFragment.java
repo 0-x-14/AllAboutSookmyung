@@ -82,7 +82,7 @@ public class MenuFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        // plugbutton을 누르면 학과정보 페이지로 넘어감
+        // plugbutton을 누르면 콘센트 페이지로 넘어감
 
         return v;
     }

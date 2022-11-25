@@ -39,59 +39,6 @@
     <!-- TODO: 메인버튼 구현을 위한 상대레이아웃틀 for 주영언니 -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="554dp">
-
-        <Button
-            android:id="@+id/majorbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="215dp"
-            android:layout_marginEnd="4dp"
-            android:background="#00FFFFFF"
-            android:backgroundTint="?android:attr/panelBackground"
-            android:backgroundTintMode="add"
-            android:drawableTop="@drawable/majorinfo"
-            tools:ignore="SpeakableTextPresentCheck"
-
-            />
-
-        <Button
-            android:id="@+id/convenientbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="75dp"
-            android:layout_marginTop="372dp"
-            android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:backgroundTint="?android:attr/panelBackground"
-            android:backgroundTintMode="add"
-            android:drawableTop="@drawable/convenient"
-            tools:ignore="SpeakableTextPresentCheck" />
-        // 편의시설 정보 버튼
-        // 상세한 버튼 위치의 경우 figma에서 확인이 어려워 임의로 지정함
-
-        <Button
-            android:id="@+id/classbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="95dp"
-            android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:backgroundTint="?android:attr/panelBackground"
-            android:backgroundTintMode="add"
-            android:drawableTop="@drawable/classinfo"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="SpeakableTextPresentCheck" />
-        // 학과정보 버튼
-        // 상세한 버튼 위치의 경우 figma에서 확인이 어려워 임의로 지정함
-    </RelativeLayout>
+        android:layout_height="554dp"/>
 
 </FrameLayout>
