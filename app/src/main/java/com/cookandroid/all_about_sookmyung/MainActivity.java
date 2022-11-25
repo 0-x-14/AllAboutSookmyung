@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -28,9 +29,6 @@ public class MainActivity extends AppCompatActivity {
         init();
         SettingListener();
 
-        // FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        // fragmentTransaction.add(R.id.home_ly, HomeFragment.newInstance).commit();
-
         bottomNavigationView.setSelectedItemId(R.id.home);
     }
 
@@ -44,35 +42,43 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new TabSelectedListener());
     }
 
-    /*
-    public void replaceFragment(Fragment fragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.home_ly, fragment).commit();
-    }
-
-     */
-
     class TabSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener {
+        Fragment MainFrag, MapFrag, MenuFrag;
+
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             switch (menuItem.getItemId()) {
-                case R.id.tab_map: {
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.home_ly, new MapFragment())
-                            .commit();
+                case R.id.tab_home: {
+                    if (MainFrag == null) {
+                        MainFrag = new HomeFragment();
+                        getSupportFragmentManager().beginTransaction().add(R.id.home_ly, MainFrag).commit();
+                    }
+
+                    if (MainFrag != null) getSupportFragmentManager().beginTransaction().show(MainFrag).commit();
+                    if (MapFrag != null) getSupportFragmentManager().beginTransaction().hide(MapFrag).commit();
+                    if (MenuFrag != null) getSupportFragmentManager().beginTransaction().hide(MenuFrag).commit();
                     return true;
                 }
-                case R.id.tab_home: {
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.home_ly, new HomeFragment())
-                            .commit();
+                case R.id.tab_map: {
+                    if (MapFrag == null) {
+                        MapFrag = new MapFragment();
+                        getSupportFragmentManager().beginTransaction().add(R.id.home_ly, MapFrag).commit();
+                    }
+
+                    if (MainFrag != null) getSupportFragmentManager().beginTransaction().hide(MainFrag).commit();
+                    if (MapFrag != null) getSupportFragmentManager().beginTransaction().show(MapFrag).commit();
+                    if (MenuFrag != null) getSupportFragmentManager().beginTransaction().hide(MenuFrag).commit();
                     return true;
                 }
                 case R.id.tab_menu: {
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.home_ly, new MenuFragment())
-                            .commit();
+                    if (MenuFrag == null) {
+                        MenuFrag = new MenuFragment();
+                        getSupportFragmentManager().beginTransaction().add(R.id.home_ly, MenuFrag).commit();
+                    }
+
+                    if (MainFrag != null) getSupportFragmentManager().beginTransaction().hide(MainFrag).commit();
+                    if (MapFrag != null) getSupportFragmentManager().beginTransaction().hide(MapFrag).commit();
+                    if (MenuFrag != null) getSupportFragmentManager().beginTransaction().show(MenuFrag).commit();
                     return true;
                 }
             }
