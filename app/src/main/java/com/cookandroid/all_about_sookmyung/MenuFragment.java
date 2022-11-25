@@ -146,21 +146,17 @@ public class MenuFragment extends Fragment {
         });
         // plugbutton을 누르면 콘센트 페이지로 넘어감
 
-        return v;
-
-        View view = inflater.inflate(R.layout.fragment_menu, container, false);
-
-        student_room = (TextView) view.findViewById(R.id.studentRoom);
-        department_office = (TextView) view.findViewById(R.id.departmentOffice);
-        locker = (TextView) view.findViewById(R.id.locker);
+        student_room = (TextView) v.findViewById(R.id.studentRoom);
+        department_office = (TextView) v.findViewById(R.id.departmentOffice);
+        locker = (TextView) v.findViewById(R.id.locker);
 
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("myPage", Context.MODE_PRIVATE);
         String valLocker = sharedPreferences.getString("locker", "(사물함 정보)");
         locker.setText(valLocker);
 
-        Button studyroombutton=(Button) view.findViewById(R.id.studyroombutton);
-        Button padspotbutton=(Button) view.findViewById(R.id.padspotbutton);
-        Button foodspotbutton=(Button) view.findViewById(R.id.foodspotbutton);
+        Button studyroombutton=(Button) v.findViewById(R.id.studyroombutton);
+        Button padspotbutton=(Button) v.findViewById(R.id.padspotbutton);
+        Button foodspotbutton=(Button) v.findViewById(R.id.foodspotbutton);
 
         /*if (savedInstanceState != null) {
             String studentRoomStr, departmentOfficeStr, lockerStr;
@@ -173,7 +169,7 @@ public class MenuFragment extends Fragment {
             locker.setText(lockerStr);
         }*/
 
-        spinner = (Spinner) view.findViewById(R.id.spinner);
+        spinner = (Spinner) v.findViewById(R.id.spinner);
         int valPosition = sharedPreferences.getInt("position", 0);
         spinner.setSelection(valPosition);
 
@@ -192,7 +188,7 @@ public class MenuFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) { }
         });
 
-        Button lockerSetBtn = (Button) view.findViewById(R.id.lockerSetButton);
+        Button lockerSetBtn = (Button) v.findViewById(R.id.lockerSetButton);
         lockerSetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -231,7 +227,7 @@ public class MenuFragment extends Fragment {
             }
         });
 
-        return view;
+        return v;
         //return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 
