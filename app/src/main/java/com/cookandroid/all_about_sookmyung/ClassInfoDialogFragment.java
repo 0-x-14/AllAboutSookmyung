@@ -45,33 +45,31 @@ public class ClassInfoDialogFragment extends androidx.fragment.app.DialogFragmen
 
         roomNumberTextView.setText(roomName); // 강의실 이름 설정
 
-
-        if (doorString.equals("앞문") || doorString.equals("뒷문") || doorString.equals("중문")){
+        backdoorTextview.setText(doorString);
+        if (doorString.equals("앞문만") || doorString.equals("뒷문만") || doorString.equals("중문만")){
             backdoorImageView.setImageResource(R.drawable.ic_classroom_backdoor_absence);
-            backdoorTextview.setText(doorString+"만 있음");
         } else {
             backdoorImageView.setImageResource(R.drawable.ic_classroom_backdoor_existed);
-            backdoorTextview.setText(doorString);
         }
 
         // 플러그 유무
         if (plugExist){
-            plugTextView.setText("콘센트 있음");
+            plugTextView.setText("콘센트 O");
             plugImageView.setImageResource(R.drawable.ic_classroom_plug_existed);
         } else {
-            plugTextView.setText("콘센트 없음");
+            plugTextView.setText("콘센트 X");
             plugImageView.setImageResource(R.drawable.ic_classroom_plug_absence);
         }
 
         // 강의실 형태
         if (roomKind == 0) { // 교실형
-            roomKindTextView.setText("교실형강의실");
+            roomKindTextView.setText("교실형");
             roomKindImageView.setImageResource(R.drawable.ic_classroom_table);
         } else if (roomKind == 1) { // 계단형
-            roomKindTextView.setText("계단강의실");
+            roomKindTextView.setText("계단형");
             roomKindImageView.setImageResource(R.drawable.ic_classroom_stair);
         } else if (roomKind == 2) { // 조별책상형
-            roomKindTextView.setText("조별책상강의실");
+            roomKindTextView.setText("조별책상");
             roomKindImageView.setImageResource(R.drawable.ic_classroom_grouptable);
         }
 

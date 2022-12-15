@@ -7,16 +7,19 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:orientation="vertical"
-        android:background="@drawable/classroom_border_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="230dp"
+        android:layout_height="300dp"
         android:layout_marginHorizontal="30dp"
+        android:background="@drawable/classroom_border_bottom"
+        android:orientation="vertical"
+        android:paddingHorizontal="45dp"
+        android:paddingTop="20dp"
         android:paddingBottom="40dp"
-        android:paddingTop="30dp"
-        android:paddingHorizontal="45dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/roomNumber"
@@ -25,7 +28,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/nanumsquareroundextrabold"
             android:text="(강의실)"
-            android:textSize="35dp" />
+            android:textSize="25dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -38,14 +41,14 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="20dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/backdoorImage"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginBottom="10dp" />
 
                 <TextView
@@ -53,7 +56,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nanumsquareroundextrabold"
-                    android:text="뒷문이 " />
+                    android:text="뒷문이 "
+                    android:textSize="11dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -64,16 +68,17 @@
 
                 <ImageView
                     android:id="@+id/plugImage"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_marginBottom="10dp"/>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp" />
 
                 <TextView
                     android:id="@+id/plugText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nanumsquareroundextrabold"
-                    android:text="콘센트" />
+                    android:text="콘센트"
+                    android:textSize="11dp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -83,29 +88,30 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="20dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/kindImage"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_marginBottom="10dp"/>
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp" />
 
                 <TextView
                     android:id="@+id/kindText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nanumsquareroundbold"
-                    android:text="계단강의실" />
+                    android:text="계단강의실"
+                    android:textSize="11dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,8 +122,8 @@
 
                 <Button
                     android:id="@+id/timeTableLinkBtn"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/ic_classroom_timetable" />
 
@@ -125,7 +131,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nanumsquareroundbold"
-                    android:text="강의시간표" />
+                    android:text="강의시간표"
+                    android:textSize="11dp" />
             </LinearLayout>
 
         </LinearLayout>
