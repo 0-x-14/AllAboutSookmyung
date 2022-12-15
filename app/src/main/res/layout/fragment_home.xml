@@ -31,46 +31,7 @@
     <!-- TODO: 메인버튼 구현을 위한 상대레이아웃틀 for 주영언니 -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/button_main_1"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="219dp"
-            android:layout_marginEnd="-34dp"
-            android:layout_toStartOf="@+id/button_main_2"
-            android:background="@drawable/ic_main_button1"
-            android:fontFamily="@font/nanumsquareroundextrabold"
-            android:text="강의실 정보"
-            android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/button_main_2"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="319dp"
-            android:layout_marginEnd="31dp"
-            android:background="@drawable/ic_main_button2"
-            android:fontFamily="@font/nanumsquareroundextrabold"
-            android:text="학과 정보"
-            android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/button_main_3"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@+id/button_main_1"
-            android:layout_marginTop="38dp"
-            android:layout_marginEnd="-14dp"
-            android:layout_toStartOf="@+id/button_main_2"
-            android:background="@drawable/ic_main_button1"
-            android:fontFamily="@font/nanumsquareroundextrabold"
-            android:text="편의시설"
-            android:textColor="@color/white" />
+        android:layout_height="554dp">
 
     </RelativeLayout>
 

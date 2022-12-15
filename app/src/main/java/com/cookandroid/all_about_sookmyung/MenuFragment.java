@@ -58,6 +58,8 @@ public class MenuFragment extends Fragment {
     EditText editLocker;
     View dialogView;
 
+    View v;
+
     public MenuFragment() {
         // Required empty public constructor
     }
@@ -80,8 +82,7 @@ public class MenuFragment extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState, View inflater) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -122,20 +123,40 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        v = inflater.inflate(R.layout.fragment_menu, container, false);
 
-        View view = inflater.inflate(R.layout.fragment_menu, container, false);
+        Button majorbutton2 = (Button) v.findViewById(R.id.majorbutton2);
+        majorbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MajorActivity.class);
+                startActivity(intent);
+            }
+        });
+        // majorbutton을 누르면 학과정보 페이지로 넘어감
 
-        student_room = (TextView) view.findViewById(R.id.studentRoom);
-        department_office = (TextView) view.findViewById(R.id.departmentOffice);
-        locker = (TextView) view.findViewById(R.id.locker);
+        Button plugbutton = (Button) v.findViewById(R.id.plugbutton);
+        plugbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PlugActivity.class);
+                startActivity(intent);
+            }
+        });
+        // plugbutton을 누르면 콘센트 페이지로 넘어감
+
+        student_room = (TextView) v.findViewById(R.id.studentRoom);
+        department_office = (TextView) v.findViewById(R.id.departmentOffice);
+        locker = (TextView) v.findViewById(R.id.locker);
 
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("myPage", Context.MODE_PRIVATE);
         String valLocker = sharedPreferences.getString("locker", "(사물함 정보)");
         locker.setText(valLocker);
 
-        Button studyroombutton=(Button) view.findViewById(R.id.studyroombutton);
-        Button padspotbutton=(Button) view.findViewById(R.id.padspotbutton);
-        Button foodspotbutton=(Button) view.findViewById(R.id.foodspotbutton);
+        Button studyroombutton=(Button) v.findViewById(R.id.studyroombutton);
+        Button padspotbutton=(Button) v.findViewById(R.id.padspotbutton);
+        Button foodspotbutton=(Button) v.findViewById(R.id.foodspotbutton);
 
         /*if (savedInstanceState != null) {
             String studentRoomStr, departmentOfficeStr, lockerStr;
@@ -148,7 +169,7 @@ public class MenuFragment extends Fragment {
             locker.setText(lockerStr);
         }*/
 
-        spinner = (Spinner) view.findViewById(R.id.spinner);
+        spinner = (Spinner) v.findViewById(R.id.spinner);
         int valPosition = sharedPreferences.getInt("position", 0);
         spinner.setSelection(valPosition);
 
@@ -167,7 +188,7 @@ public class MenuFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) { }
         });
 
-        Button lockerSetBtn = (Button) view.findViewById(R.id.lockerSetButton);
+        Button lockerSetBtn = (Button) v.findViewById(R.id.lockerSetButton);
         lockerSetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -206,7 +227,8 @@ public class MenuFragment extends Fragment {
             }
         });
 
-        return view;
+        return v;
         //return inflater.inflate(R.layout.fragment_menu, container, false);
     }
+
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/majorRoom_textview"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="과방"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/majorName_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/majorName_textview"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="학과명"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/majorOffice_textview"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="과사"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/majorRoom_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locker_textview"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="사물함"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/majorOffice_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
