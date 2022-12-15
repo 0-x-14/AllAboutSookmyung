@@ -5,15 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/myungsin_floor2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
     <Button
         android:id="@+id/floor1"
         android:layout_width="wrap_content"
@@ -24,11 +15,22 @@
 
     <Button
         android:id="@+id/room204"
-        android:layout_width="41dp"
-        android:layout_height="34dp"
-        android:backgroundTint="#00ff0000"
+        android:layout_width="53dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="444dp" />
+        tools:layout_editor_absoluteX="67dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/myungsin_floor2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

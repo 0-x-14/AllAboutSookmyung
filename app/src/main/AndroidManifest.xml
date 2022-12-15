@@ -34,8 +34,11 @@
         </activity>
         <activity android:name=".ClassActivity"></activity>
         <activity android:name=".ConvenientActivity"></activity>
+        <activity android:name=".StudyroomActivity"></activity>
         <activity android:name=".PlugActivity"></activity>
         <activity android:name=".MajorActivity"></activity>
+        <activity android:name=".MapMyungsinFloor1Activity"></activity>
+        <activity android:name=".MapMyungsinFloor2Activity"></activity>
 
     </application>
 
