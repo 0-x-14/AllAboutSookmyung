@@ -3,6 +3,8 @@ package com.cookandroid.all_about_sookmyung;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     final String TAG = this.getClass().getSimpleName();
+
     LinearLayout home_ly;
     BottomNavigationView bottomNavigationView;
 
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         init();
         SettingListener();
 
+        bottomNavigationView.setSelectedItemId(R.id.tab_home);
         bottomNavigationView.setSelectedItemId(R.id.home);
 
         // 최초 실행 여부를 판단 ->>>

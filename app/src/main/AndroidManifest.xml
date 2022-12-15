@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.All_About_Sookmyung">
         <activity
+            android:name=".FoodspotActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PadspotActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +34,20 @@
         </activity>
         <activity android:name=".TutorialActivity" />
         <activity android:name=".PrintActivity"/>
+        <activity android:name=".ClassActivity"></activity>
+        <activity android:name=".ConvenientActivity"></activity>
+        <activity android:name=".StudyroomActivity"></activity>
+        <activity android:name=".PlugActivity"></activity>
+        <activity android:name=".MajorActivity"></activity>
+        <activity android:name=".MapMyungsinFloor1Activity"></activity>
+        <activity android:name=".MapMyungsinFloor2Activity"></activity>
+        <activity android:name=".MapMyungsinFloor3Activity"></activity>
+        <activity android:name=".MapMyungsinFloor4Activity"></activity>
+        <activity android:name=".MapMyungsinFloor5Activity"></activity>
+        <activity android:name=".MapMyungsinFloor6Activity"></activity>
+        <activity android:name=".MapMyungsinFloor7Activity"></activity>
+
+
     </application>
 
 </manifest>
