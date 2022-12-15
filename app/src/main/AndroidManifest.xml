@@ -39,6 +39,12 @@
         <activity android:name=".MajorActivity"></activity>
         <activity android:name=".MapMyungsinFloor1Activity"></activity>
         <activity android:name=".MapMyungsinFloor2Activity"></activity>
+        <activity android:name=".MapMyungsinFloor3Activity"></activity>
+        <activity android:name=".MapMyungsinFloor4Activity"></activity>
+        <activity android:name=".MapMyungsinFloor5Activity"></activity>
+        <activity android:name=".MapMyungsinFloor6Activity"></activity>
+        <activity android:name=".MapMyungsinFloor7Activity"></activity>
+
 
     </application>
 

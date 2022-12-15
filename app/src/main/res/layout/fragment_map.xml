@@ -4,7 +4,8 @@
     android:id="@+id/map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapFragment">
+    tools:context=".MapFragment"
+    android:background="@drawable/background_color">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -18,11 +19,11 @@
 
         <Button
             android:id="@+id/myungsinBtn"
-            android:layout_width="48dp"
-            android:layout_height="128dp"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="395dp"
-            android:backgroundTint="#00ff0000" />
+            android:layout_width="45dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="325dp"
+            android:background="#00000000" />
 
     </LinearLayout>
 </FrameLayout>

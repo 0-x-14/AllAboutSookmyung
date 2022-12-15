@@ -9,10 +9,9 @@
     android:orientation="vertical"
     android:background="@drawable/background_color">
 
-    <!-- TODO: 검색바 구현을 위한 리니어 틀 for 정은 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="match_parent">
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_view"
@@ -24,15 +23,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
             app:queryHint="무엇이 궁금하신가요?" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- TODO: 메인버튼 구현을 위한 상대레이아웃틀 for 주영언니 -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="554dp">
-
-    </RelativeLayout>
 
 </FrameLayout>
