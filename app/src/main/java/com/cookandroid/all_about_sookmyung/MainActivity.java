@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         init();
         SettingListener();
 
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(R.id.tab_home);
     }
 
     private void init() {
