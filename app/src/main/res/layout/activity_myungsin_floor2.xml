@@ -112,6 +112,48 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
+        android:id="@+id/room201"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="149dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin201"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room202"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="158dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin202"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room203"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="167dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin203"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
         android:id="@+id/room204"
         android:layout_width="55dp"
         android:layout_height="35dp"
@@ -126,28 +168,238 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/room203"
-        android:layout_width="55dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="167dp"
+        android:id="@+id/room207"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="205dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/ic_myungsin203"
-        android:backgroundTint="@color/black"
+        android:background="@drawable/ic_myungsin207"
+        android:backgroundTint="#00ff0000"
         android:elevation="1dp"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/room202"
+        android:id="@+id/room208a"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="225dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin208a"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room208b"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="220dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin208a"
+        android:backgroundTint="#03dfe200"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room209"
         android:layout_width="55dp"
         android:layout_height="35dp"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="212dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/ic_myungsin202"
-        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/ic_myungsin209"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room210"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="206dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin210"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room211"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="198dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin211"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room212"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="104dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin212"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room213"
+        android:layout_width="39dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="96dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin213"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room214"
+        android:layout_width="75dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="283dp"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin214"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room215"
+        android:layout_width="75dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="34dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin215"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room217"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="-5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin217"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room218a"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin218a"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room218b"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin218a"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room219"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin219"
+        android:backgroundTint="#00ffff00"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room220a"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin220a"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room220b"
+        android:layout_width="54dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin220b"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room221"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="54dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin221"
+        android:backgroundTint="#00000000"
         android:elevation="1dp"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
@@ -162,7 +414,7 @@
         android:backgroundTint="#C1E0F9"
         app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"  />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -172,6 +424,6 @@
         android:src="@drawable/myungsin_floor2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="7dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,10 @@ import com.google.android.material.snackbar.Snackbar;
 public class MapMyungsinFloor2Activity extends AppCompatActivity {
     Button movementSub1, movementSub3, movementSub4, movementSub5, movementSub6, movementSub7;
     ImageButton r202Btn, r203Btn, r204Btn;
+    // TODO: 2022-12-17
+    // ImageButton 강의실 201 207 209 210 211 213 214 215 217 221 -> ClassInfoDialogFragment
+    //             과방 208a 208b 218a 219 220a 220b -> 클래스 생성 요망
+    //             회색 212 218b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
