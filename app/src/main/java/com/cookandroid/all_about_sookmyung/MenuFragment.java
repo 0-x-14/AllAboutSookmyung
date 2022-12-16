@@ -227,8 +227,18 @@ public class MenuFragment extends Fragment {
             }
         });
 
+//        Button printBtn = (Button) v.findViewById(R.id.button7);
+//        printBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(), PrintActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        Button TutorialBtn = (Button) v.findViewById(R.id.button8);
+
         return v;
-        //return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 
 }
