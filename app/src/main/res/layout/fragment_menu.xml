@@ -211,18 +211,18 @@
                     android:background="@drawable/ic_menu_icon1" />
 
                 <Button
-                    android:id="@+id/scrapbutton"
+                    android:id="@+id/plugbutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/ic_menu_icon2" />
+                    android:background="@drawable/ic_menu_icon3" />
 
                 <Button
-                    android:id="@+id/plugbutton"
+                    android:id="@+id/studyroombutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:background="@drawable/ic_menu_icon3" />
+                    android:background="@drawable/ic_menu_icon4" />
 
             </LinearLayout>
 
@@ -234,24 +234,25 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/studyroombutton"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/ic_menu_icon4" />
-
-                <Button
                     android:id="@+id/padspotbutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
                     android:background="@drawable/ic_menu_icon5" />
 
                 <Button
                     android:id="@+id/foodspotbutton"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/ic_menu_icon6" />
+
+                <Button
+
+                    android:id="@+id/button7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_menu_icon7" />
 
             </LinearLayout>
 
@@ -263,24 +264,23 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button7"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/ic_menu_icon7" />
-
-                <Button
                     android:id="@+id/button8"
                     android:layout_width="70dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_height="70dp"
                     android:background="@drawable/ic_menu_icon8" />
 
                 <Button
                     android:id="@+id/button9"
                     android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/ic_menu_icon9" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="#00000000" />
 
             </LinearLayout>
         </LinearLayout>

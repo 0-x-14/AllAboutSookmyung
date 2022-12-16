@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+    <TextView
         android:id="@+id/button"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:fontFamily="@font/nanumsquareroundextrabold"
+        android:gravity="center"
         android:text="1층"
         android:textSize="11dp"
-        android:enabled="false"
+        android:textColor="@color/black"
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -27,25 +28,13 @@
         android:fontFamily="@font/nanumsquareroundextrabold"
         android:text="2층"
         android:textSize="11dp"
+        android:textColor="#707070"
+        android:gravity="center"
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:fontFamily="@font/nanumsquareroundextrabold"
-        android:text="5층"
-        android:textSize="11dp"
-        android:background="@drawable/select_floor"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -55,11 +44,12 @@
         android:fontFamily="@font/nanumsquareroundextrabold"
         android:text="3층"
         android:textSize="11dp"
+        android:textColor="#707070"
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button2"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -69,25 +59,27 @@
         android:fontFamily="@font/nanumsquareroundextrabold"
         android:text="4층"
         android:textSize="11dp"
+        android:textColor="#707070"
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button3"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button5"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:fontFamily="@font/nanumsquareroundextrabold"
-        android:text="7층"
+        android:text="5층"
         android:textSize="11dp"
+        android:textColor="#707070"
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button4"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -97,38 +89,130 @@
         android:fontFamily="@font/nanumsquareroundextrabold"
         android:text="6층"
         android:textSize="11dp"
+        android:textColor="#707070"
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button5"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/room204"
-        android:layout_width="44dp"
-        android:layout_height="39dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="70dp"
-        android:background="#00000000"
+        android:id="@+id/button7"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="7층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room101"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="-4dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin101"
+        android:backgroundTint="#000000"
+        android:elevation="1dp"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/room102"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin102"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room103"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="18dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin103"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room104"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="23dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin104"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room105"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin105"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room109"
+        android:layout_width="77dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin109"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="사물함버튼"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_noonsong_face"
+        android:backgroundTint="#C1E0F9"
+        app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"  />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/myungsin_floor2"
+        android:src="@drawable/myungsin_floor1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
