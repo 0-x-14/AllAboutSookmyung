@@ -6,14 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
-    android:orientation="vertical"
-    android:background="@drawable/background_color">
+    android:orientation="vertical">
 
     <!-- TODO: 검색바 구현을 위한 리니어 틀 for 정은 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout
     지정한 공간은 가시성을 위해 크기를 정한거라 알아서 바꿔도 노상관(height)
@@ -30,27 +25,9 @@
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/search_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_angle"
-            app:iconifiedByDefault="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4"
-            app:queryHint="무엇이 궁금하신가요?" />
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view"
                 android:layout_width="wrap_content"
@@ -63,13 +40,15 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:queryHint="무엇이 궁금하신가요?" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+        </RelativeLayout>
+    </LinearLayout>
 
     <!-- TODO: 메인버튼 구현을 위한 상대레이아웃틀 for 주영언니 -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="500dp">
 
-    </RelativeLayout>
 
 </FrameLayout>
