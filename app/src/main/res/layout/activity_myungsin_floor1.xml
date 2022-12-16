@@ -112,7 +112,89 @@
         android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
+    <ImageButton
+        android:id="@+id/room101"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="-4dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin101"
+        android:backgroundTint="#000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
 
+    <ImageButton
+        android:id="@+id/room102"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin102"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room103"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="18dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin103"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room104"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="23dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin104"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room105"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin105"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room109"
+        android:layout_width="77dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin109"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
