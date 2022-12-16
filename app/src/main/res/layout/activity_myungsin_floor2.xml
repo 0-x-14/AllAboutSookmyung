@@ -16,8 +16,8 @@
         android:background="@drawable/select_floor"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -33,7 +33,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button4"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -63,7 +63,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button2"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -78,7 +78,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button3"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -93,7 +93,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button6"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -108,27 +108,61 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/button5"
         android:layout_marginStart="3dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageButton
         android:id="@+id/room204"
-        android:layout_width="44dp"
-        android:layout_height="39dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="70dp"
-        android:background="#00000000"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="173dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin204"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/room203"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="167dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin203"
+        android:backgroundTint="@color/black"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room202"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="158dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin202"
+        android:backgroundTint="@color/purple_500"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="사물함버튼"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_noonsong_face"
+        android:backgroundTint="#C1E0F9"
+        app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"  />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -138,6 +172,6 @@
         android:src="@drawable/myungsin_floor2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="7dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
