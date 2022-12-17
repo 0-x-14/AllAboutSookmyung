@@ -117,7 +117,7 @@
         android:layout_width="66dp"
         android:layout_height="41dp"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="-2dp"
+        android:layout_marginTop="66dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin101"
         android:backgroundTint="#00000000"
@@ -128,10 +128,10 @@
 
     <ImageButton
         android:id="@+id/room102"
-        android:layout_width="42dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="78dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin102"
         android:backgroundTint="#00ff0000"
@@ -142,10 +142,10 @@
 
     <ImageButton
         android:id="@+id/room103"
-        android:layout_width="42dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="18dp"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="85dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin103"
         android:backgroundTint="#00000000"
@@ -158,8 +158,8 @@
         android:id="@+id/room104"
         android:layout_width="66dp"
         android:layout_height="41dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="89dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin104"
         android:backgroundTint="#00ff0000"
@@ -172,8 +172,8 @@
         android:id="@+id/room105"
         android:layout_width="66dp"
         android:layout_height="41dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin105"
         android:backgroundTint="#00000000"
@@ -187,7 +187,7 @@
         android:layout_width="83dp"
         android:layout_height="45dp"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="148dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin106"
         android:backgroundTint="#00000000"
@@ -201,7 +201,7 @@
         android:layout_width="73dp"
         android:layout_height="45dp"
         android:layout_marginStart="172dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="135dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin107"
         android:backgroundTint="#00ff0000"
@@ -215,7 +215,7 @@
         android:layout_width="73dp"
         android:layout_height="45dp"
         android:layout_marginStart="280dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="113dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin107"
         android:backgroundTint="#00ff0000"
@@ -228,8 +228,8 @@
         android:id="@+id/room109"
         android:layout_width="77dp"
         android:layout_height="57dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="134dp"
         android:adjustViewBounds="true"
         android:background="@drawable/ic_myungsin109"
         android:backgroundTint="#00000000"
@@ -238,16 +238,53 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_noonsong_face"
-        android:backgroundTint="#C1E0F9"
-        app:borderWidth="0dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"  />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f0f6ff"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab_main"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f0f6ff"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#C1E0F9"
+            android:src="@drawable/ic_noonsong_face"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+    </RelativeLayout>
+
 
     <ImageView
         android:id="@+id/imageView4"

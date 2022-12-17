@@ -16,6 +16,7 @@ public class ClassInfoDialogFragment extends androidx.fragment.app.DialogFragmen
 
     TextView roomNumberTextView, backdoorTextview, plugTextView, roomKindTextView;
     ImageView backdoorImageView, plugImageView, roomKindImageView;
+    ImageButton exitBtn;
 
     public ClassInfoDialogFragment (String roomName, String doorString, boolean plugExist, int roomKind) {
         this.roomName = roomName;
@@ -72,6 +73,14 @@ public class ClassInfoDialogFragment extends androidx.fragment.app.DialogFragmen
             roomKindTextView.setText("조별책상");
             roomKindImageView.setImageResource(R.drawable.ic_classroom_grouptable);
         }
+
+        exitBtn = (ImageButton) view.findViewById(R.id.exitBtn);
+        exitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
 
         return view;
     }

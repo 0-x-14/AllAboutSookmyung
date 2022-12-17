@@ -51,29 +51,4 @@ public class DialogFragment extends androidx.fragment.app.DialogFragment {
                         }).setNegativeButton("취소", null);
         return builder.create();
     }
-
-/*
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.set_locker,container);
-        EditText editLocker = (EditText) v.findViewById(R.id.editLocker);
-        Button btnEnter = (Button) v.findViewById(R.id.btnEnter);
-        Button btnCancel = (Button) v.findViewById(R.id.btnCancel);
-        btnEnter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 콜백
-            }
-        });
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dismiss();
-            }
-        });
-        return v;
-
-    }*/
-
 }

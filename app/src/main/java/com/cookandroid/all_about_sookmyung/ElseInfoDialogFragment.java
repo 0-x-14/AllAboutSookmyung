@@ -4,15 +4,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
 public class ElseInfoDialogFragment extends androidx.fragment.app.DialogFragment {
-
     String roomName; // 시설 이름
-
     TextView roomNameTextView;
+    ImageButton exitBtn;
 
     public ElseInfoDialogFragment (String roomName) {
         this.roomName = roomName;
@@ -30,6 +31,14 @@ public class ElseInfoDialogFragment extends androidx.fragment.app.DialogFragment
 
         roomNameTextView = (TextView) view.findViewById(R.id.roomName);
         roomNameTextView.setText(roomName); // 강의실 이름 설정
+
+        exitBtn = (ImageButton) view.findViewById(R.id.exitBtn);
+        exitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
 
         return view;
     }

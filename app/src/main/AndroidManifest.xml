@@ -39,13 +39,27 @@
         <activity android:name=".StudyroomActivity"></activity>
         <activity android:name=".PlugActivity"></activity>
         <activity android:name=".MajorActivity"></activity>
-        <activity android:name=".MapMyungsinFloor1Activity"></activity>
-        <activity android:name=".MapMyungsinFloor2Activity"></activity>
-        <activity android:name=".MapMyungsinFloor3Activity"></activity>
-        <activity android:name=".MapMyungsinFloor4Activity"></activity>
-        <activity android:name=".MapMyungsinFloor5Activity"></activity>
-        <activity android:name=".MapMyungsinFloor6Activity"></activity>
-        <activity android:name=".MapMyungsinFloor7Activity"></activity>
+        <activity
+            android:name=".MapMyungsinFloor1Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor2Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor3Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor4Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor5Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor6Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor7Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
 
 
     </application>

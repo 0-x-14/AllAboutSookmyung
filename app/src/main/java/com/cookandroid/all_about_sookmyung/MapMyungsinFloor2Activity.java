@@ -14,9 +14,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-public class MapMyungsinFloor2Activity extends AppCompatActivity {
+public class MapMyungsinFloor2Activity extends AppCompatActivity{
+    Animation fab_open, fab_close;
+    Boolean isFabOpen = false;
+    FloatingActionButton fab, fab1, fab2;
+    Context context;
+
     Button movementSub1, movementSub3, movementSub4, movementSub5, movementSub6, movementSub7;
     ImageButton r202Btn, r203Btn, r204Btn, r218bBtn;
+
     // TODO: 2022-12-17 Image 버튼 구현 요망(선언부터), 파란 강의실은 ClassInfoDialogFragment, 회색은 편집 중
     //       강의실 201 207 209 210 211 213 214 215 217 221
     //       과방 208a 208b 218a 219 220a 220b
@@ -38,7 +44,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapMyungsinFloor2Activity.this, MapMyungsinFloor1Activity.class);
-                //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
@@ -47,7 +53,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapMyungsinFloor2Activity.this, MapMyungsinFloor3Activity.class);
-               // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
@@ -56,7 +62,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapMyungsinFloor2Activity.this, MapMyungsinFloor4Activity.class);
-               // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
@@ -65,7 +71,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapMyungsinFloor2Activity.this, MapMyungsinFloor5Activity.class);
-                //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
@@ -74,7 +80,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapMyungsinFloor2Activity.this, MapMyungsinFloor6Activity.class);
-                //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
@@ -83,8 +89,37 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MapMyungsinFloor2Activity.this, MapMyungsinFloor7Activity.class);
-                //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
+            }
+        });
+
+        context = getApplicationContext();
+        fab_open = AnimationUtils.loadAnimation(context, R.anim.fab_open);
+        fab_close = AnimationUtils.loadAnimation(context, R.anim.fab_close);
+
+        fab = (FloatingActionButton) findViewById(R.id.fab_main);
+        fab1 = (FloatingActionButton) findViewById(R.id.fab1);
+        fab2 = (FloatingActionButton) findViewById(R.id.fab2);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                anim();
+            }
+        });
+
+        fab1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2022-12-17 사물함
+            }
+        });
+
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finishAffinity(); // 캠퍼스 지도로
             }
         });
 
@@ -123,5 +158,21 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
                 room218bDialog.show(getSupportFragmentManager(), "218b");
             }
         });
+    }
+
+    public void anim() {
+        if (isFabOpen) {
+            fab1.startAnimation(fab_close);
+            fab2.startAnimation(fab_close);
+            fab1.setClickable(false);
+            fab2.setClickable(false);
+            isFabOpen = false;
+        } else {
+            fab1.startAnimation(fab_open);
+            fab2.startAnimation(fab_open);
+            fab1.setClickable(true);
+            fab2.setClickable(true);
+            isFabOpen = true;
+        }
     }
 }
