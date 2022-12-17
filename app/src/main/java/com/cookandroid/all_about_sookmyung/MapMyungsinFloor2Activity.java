@@ -16,7 +16,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MapMyungsinFloor2Activity extends AppCompatActivity {
     Button movementSub1, movementSub3, movementSub4, movementSub5, movementSub6, movementSub7;
-    ImageButton r202Btn, r203Btn, r204Btn;
+    ImageButton r202Btn, r203Btn, r204Btn, r218bBtn;
     // TODO: 2022-12-17 Image 버튼 구현 요망(선언부터), 파란 강의실은 ClassInfoDialogFragment, 회색은 편집 중
     //       강의실 201 207 209 210 211 213 214 215 217 221
     //       과방 208a 208b 218a 219 220a 220b
@@ -93,7 +93,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ClassInfoDialogFragment room203Dialog = ClassInfoDialogFragment.getInstance("202호", "앞문과 뒷문", true, 0);
-                room203Dialog.show(getSupportFragmentManager(), "202호");
+                room203Dialog.show(getSupportFragmentManager(), "202");
             }
         });
 
@@ -102,7 +102,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ClassInfoDialogFragment room203Dialog = ClassInfoDialogFragment.getInstance("203호", "앞문과 뒷문", true, 0);
-                room203Dialog.show(getSupportFragmentManager(), "203호");
+                room203Dialog.show(getSupportFragmentManager(), "203");
             }
         });
 
@@ -111,7 +111,16 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ClassInfoDialogFragment room204Dialog = ClassInfoDialogFragment.getInstance("204호", "앞문과 뒷문", true, 0);
-                room204Dialog.show(getSupportFragmentManager(), "204호");
+                room204Dialog.show(getSupportFragmentManager(), "204");
+            }
+        });
+
+        r218bBtn = (ImageButton) findViewById(R.id.room218b);
+        r218bBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ElseInfoDialogFragment room218bDialog = ElseInfoDialogFragment.getInstance("분리수거 작업실");
+                room218bDialog.show(getSupportFragmentManager(), "218b");
             }
         });
     }
