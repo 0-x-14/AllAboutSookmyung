@@ -17,6 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/btm_navi_menu"
+        app:itemIconTint="@drawable/tab_select_color"
+        app:itemTextColor="@drawable/tab_select_color"
         app:itemBackground="@color/white"
         android:theme="@style/Widget.BottomNavigationView"/>
 

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -90,18 +91,18 @@ public class MenuFragment extends Fragment {
         }
     }
 
-    /*@Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        String studentRoomStr, departmentOfficeStr, lockerStr;
-        studentRoomStr = student_room.getText().toString();
-        departmentOfficeStr = department_office.getText().toString();
-        lockerStr = locker.getText().toString();
-        outState.putString(STU_ROOM, studentRoomStr);
-        outState.putString(DEP_OFF, departmentOfficeStr);
-        outState.putString(LOC, lockerStr);
-    }*/
+//    @Override
+//    public void onSaveInstanceState(@NonNull Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//
+//        String studentRoomStr, departmentOfficeStr, lockerStr;
+//        studentRoomStr = student_room.getText().toString();
+//        departmentOfficeStr = department_office.getText().toString();
+//        lockerStr = locker.getText().toString();
+//        outState.putString(STU_ROOM, studentRoomStr);
+//        outState.putString(DEP_OFF, departmentOfficeStr);
+//        outState.putString(LOC, lockerStr);
+//    }
 
     @Override
     public void onDestroy() {
@@ -109,9 +110,6 @@ public class MenuFragment extends Fragment {
 
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("myPage", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        editor.clear();
-        editor.commit();
 
         String valLocker = locker.getText().toString();
         int valSpinner = spinner.getSelectedItemPosition();
@@ -170,6 +168,7 @@ public class MenuFragment extends Fragment {
         }*/
 
         spinner = (Spinner) v.findViewById(R.id.spinner);
+
         int valPosition = sharedPreferences.getInt("position", 0);
         spinner.setSelection(valPosition);
 
@@ -212,6 +211,7 @@ public class MenuFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         padspotbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -219,11 +219,40 @@ public class MenuFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         foodspotbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),FoodspotActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        Button printbutton = (Button)v.findViewById(R.id.button7);
+        Button potalbutton = (Button)v.findViewById(R.id.button8);
+        Button tutorialbutton = (Button)v.findViewById(R.id.button9);
+
+        printbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PrintActivity.class);
+                startActivity(intent);
+            }
+        });
+        potalbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://smsso.sookmyung.ac.kr/sso/auth?&client_id=EP&response_type=code&state=1668411833546&p_sid=null&rd_c_p=loginparam"));
+                startActivity(intent);
+            }
+        });
+        tutorialbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), TutorialActivity.class);
+                startActivity(intent);
+                //finish();
             }
         });
 

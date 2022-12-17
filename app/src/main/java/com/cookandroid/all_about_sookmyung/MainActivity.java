@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -29,7 +32,25 @@ public class MainActivity extends AppCompatActivity {
         init();
         SettingListener();
 
+        bottomNavigationView.setSelectedItemId(R.id.tab_home);
         bottomNavigationView.setSelectedItemId(R.id.home);
+
+        // 최초 실행 여부를 판단 ->>>
+        SharedPreferences pref = getSharedPreferences("checkFirst", Activity.MODE_PRIVATE);
+        boolean checkFirst = pref.getBoolean("checkFirst", false);
+
+        // false일 경우 최초 실행
+        if(!checkFirst){
+            // 앱 최초 실행시 하고 싶은 작업
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putBoolean("checkFirst",true);
+            editor.apply();
+            finish();
+
+            Intent intent = new Intent(MainActivity.this, TutorialActivity.class);
+            startActivity(intent);
+
+        }
     }
 
     private void init() {

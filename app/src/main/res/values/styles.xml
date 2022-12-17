@@ -9,4 +9,9 @@
         parent="android:style/Widget.ListView.DropDown">
         <item name="fontFamily">@font/nanumsquareroundregular</item>
     </style>
+
+    <style name="NewDialog">
+        <item name="android:windowBackground">#70ffffff</item>
+        <item name="android:windowActionModeOverlay">false</item>
+    </style>
 </resources>

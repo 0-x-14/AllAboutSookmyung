@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:gravity="center"
+        android:text="1층"
+        android:textSize="11dp"
+        android:textColor="@color/black"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="2층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:gravity="center"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="3층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="4층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="5층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="6층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="7층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room101"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="66dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin101"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room102"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="78dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin102"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room103"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="85dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin103"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room104"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="89dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin104"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room105"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin105"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room106"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="148dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin106"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room107"
+        android:layout_width="73dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="135dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin107"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room108"
+        android:layout_width="73dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="113dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin107"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room109"
+        android:layout_width="77dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="134dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin109"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f0f6ff"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab_main"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f0f6ff"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#C1E0F9"
+            android:src="@drawable/ic_noonsong_face"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/myungsin_floor1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
