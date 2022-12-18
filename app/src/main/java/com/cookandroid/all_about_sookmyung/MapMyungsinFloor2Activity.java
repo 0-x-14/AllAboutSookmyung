@@ -249,6 +249,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 ElseInfoDialogFragment elseInfoDialogFragment = ElseInfoDialogFragment.getInstance("218a", "정치외교학과 과방");
+                elseInfoDialogFragment.show(getSupportFragmentManager(), "");
             }
         });
 
