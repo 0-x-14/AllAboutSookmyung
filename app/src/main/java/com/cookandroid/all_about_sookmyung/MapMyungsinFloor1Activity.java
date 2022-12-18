@@ -20,7 +20,7 @@ public class MapMyungsinFloor1Activity extends AppCompatActivity {
     Context context;
 
     Button movementSub2, movementSub3, movementSub4, movementSub5, movementSub6, movementSub7;
-    ImageButton r101Btn,r102Btn, r103Btn, r104Btn, r105Btn, r106Btn, r107Btn, r108Btn, r109Btn;
+    ImageButton r101Btn,r102Btn, r103Btn, r104Btn, r106Btn, r107Btn, r108Btn, r109Btn;
     // TODO: 2022-12-17 Image 버튼 구현 요망, 파란 강의실은 ClassInfoDialogFragment, 회색은 편집 중
 
     @Override
