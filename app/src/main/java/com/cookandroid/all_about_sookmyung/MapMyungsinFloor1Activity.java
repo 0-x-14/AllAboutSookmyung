@@ -117,6 +117,78 @@ public class MapMyungsinFloor1Activity extends AppCompatActivity {
                 finishAffinity(); // 캠퍼스 지도로
             }
         });
+
+        r101Btn = (ImageButton) findViewById(R.id.room101);
+        r101Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("101", "앞문과 뒷문", false, 0);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r102Btn = (ImageButton) findViewById(R.id.room102);
+        r102Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ElseInfoDialogFragment elseInfoDialogFragment = ElseInfoDialogFragment.getInstance("102", "추후 업데이트");
+                elseInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r103Btn = (ImageButton) findViewById(R.id.room103);
+        r103Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("103", "뒷문만", false, 0);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r104Btn = (ImageButton) findViewById(R.id.room104);
+        r104Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("104", "앞문과 뒷문", false, 0);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r106Btn = (ImageButton) findViewById(R.id.room106);
+        r106Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("106", "뒷문만", false, 0);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r107Btn = (ImageButton) findViewById(R.id.room107);
+        r107Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("107", "앞문과 뒷문", false, 0);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r108Btn = (ImageButton) findViewById(R.id.room108);
+        r108Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ElseInfoDialogFragment elseInfoDialogFragment = ElseInfoDialogFragment.getInstance("108", "프린터실");
+                elseInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r109Btn = (ImageButton) findViewById(R.id.room109);
+        r109Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("109", "중문만", false, 0);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
     }
 
     public void anim() {

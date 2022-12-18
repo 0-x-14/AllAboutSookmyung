@@ -23,11 +23,6 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity{
     Button movementSub1, movementSub3, movementSub4, movementSub5, movementSub6, movementSub7;
     ImageButton r201Btn, r202Btn, r203Btn, r204Btn, r207Btn, r208aBtn, r208bBtn, r209Btn, r210Btn, r211Btn, r212Btn, r213Btn, r214Btn, r215Btn, r218aBtn, r218bBtn, r219Btn, r220aBtn, r220bBtn, r221Btn;
 
-    // TODO: 2022-12-17 Image 버튼 구현 요망(선언부터), 파란 강의실은 ClassInfoDialogFragment, 회색은 편집 중
-    //       강의실 201 207 209 210 211 213 214 215 217 221
-    //       과방 208a 208b 218a 219 220a 220b
-    //       회색 212 218b
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
