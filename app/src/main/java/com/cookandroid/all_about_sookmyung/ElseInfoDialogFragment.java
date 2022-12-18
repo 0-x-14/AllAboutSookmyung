@@ -11,16 +11,17 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 public class ElseInfoDialogFragment extends androidx.fragment.app.DialogFragment {
-    String roomName; // 시설 이름
-    TextView roomNameTextView;
+    String roomNumber, roomName; // 시설 이름
+    TextView roomNumberTextView, roomNameTextView;
     ImageButton exitBtn;
 
-    public ElseInfoDialogFragment (String roomName) {
+    public ElseInfoDialogFragment (String roomNumber, String roomName) {
+        this.roomNumber = roomNumber;
         this.roomName = roomName;
     }
 
-    public static ElseInfoDialogFragment getInstance(String roomName) {
-        ElseInfoDialogFragment e = new ElseInfoDialogFragment(roomName);
+    public static ElseInfoDialogFragment getInstance(String roomNumber, String roomName) {
+        ElseInfoDialogFragment e = new ElseInfoDialogFragment(roomNumber, roomName);
         e.setStyle(STYLE_NO_TITLE, R.style.NewDialog);
         return e;
     }
@@ -28,6 +29,9 @@ public class ElseInfoDialogFragment extends androidx.fragment.app.DialogFragment
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.else_information, null);
+
+        roomNumberTextView = (TextView) view.findViewById(R.id.roomNumber);
+        roomNumberTextView.setText(roomNumber);
 
         roomNameTextView = (TextView) view.findViewById(R.id.roomName);
         roomNameTextView.setText(roomName); // 강의실 이름 설정

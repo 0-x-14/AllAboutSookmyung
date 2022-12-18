@@ -145,7 +145,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity{
         r204Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ClassInfoDialogFragment room204Dialog = ClassInfoDialogFragment.getInstance("204호", "앞문과 뒷문", true, 0);
+                ClassInfoDialogFragment room204Dialog = ClassInfoDialogFragment.getInstance("204", "앞문과 뒷문", true, 0);
                 room204Dialog.show(getSupportFragmentManager(), "204");
             }
         });
@@ -154,7 +154,7 @@ public class MapMyungsinFloor2Activity extends AppCompatActivity{
         r218bBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ElseInfoDialogFragment room218bDialog = ElseInfoDialogFragment.getInstance("분리수거 작업실");
+                ElseInfoDialogFragment room218bDialog = ElseInfoDialogFragment.getInstance("218b", "분리수거 작업실");
                 room218bDialog.show(getSupportFragmentManager(), "218b");
             }
         });
