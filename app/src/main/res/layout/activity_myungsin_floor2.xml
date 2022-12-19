@@ -406,6 +406,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="#f0f6ff"
+            android:src="@drawable/ic_map_locker"
             android:visibility="invisible"
             app:borderWidth="0dp"
             app:fabSize="normal" />
@@ -419,6 +420,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="#f0f6ff"
+            android:src="@drawable/ic_map_return"
             android:visibility="invisible"
             app:borderWidth="0dp"
             app:fabSize="normal" />
