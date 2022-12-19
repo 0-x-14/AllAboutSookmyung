@@ -239,6 +239,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="#f0f6ff"
+            android:src="@drawable/ic_map_locker"
             android:visibility="invisible"
             app:borderWidth="0dp"
             app:fabSize="normal" />
@@ -251,6 +252,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginBottom="8dp"
             android:layout_marginRight="20dp"
+            android:src="@drawable/ic_map_return"
             android:backgroundTint="#f0f6ff"
             android:visibility="invisible"
             app:borderWidth="0dp"
