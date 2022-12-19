@@ -113,7 +113,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -160,13 +160,25 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/floor7_locker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/myungsin_floor7_locker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="1dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"/>
+
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/myungsin_floor4"
+        android:src="@drawable/myungsin_floor7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
