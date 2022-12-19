@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:layout_marginTop="50dp"
-        android:text="편의시설 페이지 뒤로가기 (임의)"
+        android:text="나가기"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     // 메인페이지로 돌아가는 버튼
