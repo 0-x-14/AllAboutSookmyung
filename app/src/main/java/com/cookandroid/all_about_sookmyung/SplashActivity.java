@@ -12,14 +12,19 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_splash);
         //로딩화면 시작
-        try{
-            Thread.sleep(4000);
-        } catch(InterruptedException e){
-            e.printStackTrace();
-        }
-        startActivity(new Intent(this,MainActivity.class));
+        Loadingstart();
+    }
+    private void Loadingstart(){
+        Handler handler=new Handler();
+        handler.postDelayed(new Runnable(){
+            public void run() {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },4000);
 
     }
 }
