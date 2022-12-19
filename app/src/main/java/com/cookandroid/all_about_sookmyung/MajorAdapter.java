@@ -1,5 +1,6 @@
 package com.cookandroid.all_about_sookmyung;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,12 +42,16 @@ public class MajorAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.activity_major_item, null);
-            majorName_textview = (TextView)view.findViewById(R.id.majorName_textview);
-            majorRoom_textview = (TextView)view.findViewById(R.id.majorRoom_textview);
-            majorOffice_textview = (TextView)view.findViewById(R.id.majorOffice_textview);
-            locker_textview = (TextView)view.findViewById(R.id.locker_textview);
+            LayoutInflater li = ((LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE));
+            view = li.inflate(R.layout.activity_major_item, null);
         }
+
+        majorName_textview = (TextView)view.findViewById(R.id.majorName_textview);
+        majorRoom_textview = (TextView)view.findViewById(R.id.majorRoom_textview);
+        majorOffice_textview = (TextView)view.findViewById(R.id.majorOffice_textview);
+        locker_textview = (TextView)view.findViewById(R.id.locker_textview);
+
+        // Item item = arraylistItems(position);
 
         majorName_textview.setText(MajorItem_ArrayList.get(position).getMajorName_textview());
         majorRoom_textview.setText(MajorItem_ArrayList.get(position).getMajorRoom_textview());
