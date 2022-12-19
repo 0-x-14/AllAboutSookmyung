@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +22,7 @@ public class MapMyungsinFloor7Activity extends AppCompatActivity {
     ImageView main, locker;
 
     Button movementSub1, movementSub2, movementSub3, movementSub4, movementSub5, movementSub6;
+    ImageButton r701Btn, r702Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,6 +128,24 @@ public class MapMyungsinFloor7Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finishAffinity(); // 캠퍼스 지도로
+            }
+        });
+
+        r701Btn = (ImageButton) findViewById(R.id.room701);
+        r701Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("701", "뒷문만", true, 1);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
+            }
+        });
+
+        r702Btn = (ImageButton) findViewById(R.id.room702);
+        r702Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("702", "뒷문만", true, 1);
+                classInfoDialogFragment.show(getSupportFragmentManager(), "");
             }
         });
     }
