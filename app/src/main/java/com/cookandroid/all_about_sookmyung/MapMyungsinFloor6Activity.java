@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,9 +15,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MapMyungsinFloor6Activity extends AppCompatActivity {
     Animation fab_open, fab_close;
-    Boolean isFabOpen = false;
+    Boolean isFabOpen = false, isVisible = false;
     FloatingActionButton fab, fab1, fab2;
     Context context;
+    ImageView main, locker;
 
     Button movementSub1, movementSub2, movementSub3, movementSub4, movementSub5, movementSub7;
 
@@ -94,6 +96,9 @@ public class MapMyungsinFloor6Activity extends AppCompatActivity {
         fab1 = (FloatingActionButton) findViewById(R.id.fab1);
         fab2 = (FloatingActionButton) findViewById(R.id.fab2);
 
+        main = (ImageView) findViewById(R.id.imageView4);
+        locker = (ImageView) findViewById(R.id.floor6_locker);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +109,16 @@ public class MapMyungsinFloor6Activity extends AppCompatActivity {
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: 2022-12-17 사물함
+                if(!isVisible){
+                    locker.setVisibility(View.VISIBLE);
+                    main.setVisibility(View.INVISIBLE);
+                    isVisible = true;
+                }
+                else {
+                    locker.setVisibility(View.INVISIBLE);
+                    main.setVisibility(View.VISIBLE);
+                    isVisible = false;
+                }
             }
         });
 
