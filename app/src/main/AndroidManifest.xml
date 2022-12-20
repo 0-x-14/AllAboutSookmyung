@@ -39,7 +39,36 @@
             android:name=".MainActivity"
             android:exported="true">
         </activity>
-        <activity android:name=".StudyroomActivity" />
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".PrintActivity"/>
+        <activity android:name=".ClassActivity"></activity>
+        <activity android:name=".ConvenientActivity"></activity>
+        <activity android:name=".StudyroomActivity"></activity>
+        <activity android:name=".PlugActivity"></activity>
+        <activity android:name=".MajorActivity"></activity>
+        <activity
+            android:name=".MapMyungsinFloor1Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor2Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor3Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor4Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor5Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor6Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+        <activity
+            android:name=".MapMyungsinFloor7Activity"
+            android:taskAffinity="com.map.myungsin.multiFinish" />
+
+
     </application>
 
 </manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/nanumsquareroundextrabold</item>
+    </style>
+
+    <style name="spinnerTheme"
+        parent="android:style/Widget.ListView.DropDown">
+        <item name="fontFamily">@font/nanumsquareroundregular</item>
+    </style>
+
+    <style name="NewDialog">
+        <item name="android:windowBackground">#70ffffff</item>
+        <item name="android:windowActionModeOverlay">false</item>
+    </style>
+</resources>

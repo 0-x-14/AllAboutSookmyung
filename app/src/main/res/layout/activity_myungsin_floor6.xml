@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="1층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="2층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="3층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="4층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="5층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/button6"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="6층"
+        android:textSize="11dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/nanumsquareroundextrabold"
+        android:text="7층"
+        android:textSize="11dp"
+        android:textColor="#707070"
+        android:background="@drawable/select_floor"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room601"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="148dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin601"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room602"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="156dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin602"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room603"
+        android:layout_width="73dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="164dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin603"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room604"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="177dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin604"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room605"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="207dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin605"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room606"
+        android:layout_width="55dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="230dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin606"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room607"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="222dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin607"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room608"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="214dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin608"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room609"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="207dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin609"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room610"
+        android:layout_width="58dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="198dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin610"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room612"
+        android:layout_width="53dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="190dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin612"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room624"
+        android:layout_width="53dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="140dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin624"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room613"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="99dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin613"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room614"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="94dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin614"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room615"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="90dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin615"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room616"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="85dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin616"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room617"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="321dp"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin617"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room_lab"
+        android:layout_width="67dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="38dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin_lab"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room619"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin619"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room620"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin620"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room621"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="9dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin621"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room622"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin622"
+        android:backgroundTint="#00ff0000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room623a"
+        android:layout_width="46dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin623a"
+        android:backgroundTint="#00ff0000"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/room623bc"
+        android:layout_width="46dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="19dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_myungsin623bc"
+        android:backgroundTint="#00000000"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f0f6ff"
+            android:src="@drawable/ic_map_locker"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab_main"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#f0f6ff"
+            android:src="@drawable/ic_map_return"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#C1E0F9"
+            android:src="@drawable/ic_noonsong_face"
+            app:borderWidth="0dp"
+            app:fabSize="normal" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/floor6_locker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/myungsin_floor6_locker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        android:elevation="1dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/myungsin_floor6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
