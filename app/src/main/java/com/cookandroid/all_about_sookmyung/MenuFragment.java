@@ -171,6 +171,7 @@ public class MenuFragment extends Fragment {
                 department_office.setText(department_office_list[position]);
             }
 
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
