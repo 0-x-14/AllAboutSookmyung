@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         SettingListener();
 
         bottomNavigationView.setSelectedItemId(R.id.tab_home);
-        bottomNavigationView.setSelectedItemId(R.id.home);
 
         // 최초 실행 여부를 판단 ->>>
         SharedPreferences pref = getSharedPreferences("checkFirst", Activity.MODE_PRIVATE);

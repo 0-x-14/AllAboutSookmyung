@@ -91,26 +91,14 @@ public class MenuFragment extends Fragment {
         }
     }
 
-//    @Override
-//    public void onSaveInstanceState(@NonNull Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//
-//        String studentRoomStr, departmentOfficeStr, lockerStr;
-//        studentRoomStr = student_room.getText().toString();
-//        departmentOfficeStr = department_office.getText().toString();
-//        lockerStr = locker.getText().toString();
-//        outState.putString(STU_ROOM, studentRoomStr);
-//        outState.putString(DEP_OFF, departmentOfficeStr);
-//        outState.putString(LOC, lockerStr);
-//    }
-
     @Override
-    public void onDestroy() {
-        super.onDestroy();
+    public void onStop() {
+        super.onStop();
 
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("myPage", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
+        editor.clear();
         String valLocker = locker.getText().toString();
         int valSpinner = spinner.getSelectedItemPosition();
         editor.putString("locker", valLocker);
@@ -169,12 +157,12 @@ public class MenuFragment extends Fragment {
 
         spinner = (Spinner) v.findViewById(R.id.spinner);
 
-        int valPosition = sharedPreferences.getInt("position", 0);
-        spinner.setSelection(valPosition);
-
         ArrayAdapter departmentAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.department_spinner_array, android.R.layout.simple_spinner_dropdown_item);
         departmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(departmentAdapter);
+
+        int valPosition = sharedPreferences.getInt("position", 0);
+        spinner.setSelection(valPosition);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -184,7 +172,9 @@ public class MenuFragment extends Fragment {
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) { }
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
         });
 
         Button lockerSetBtn = (Button) v.findViewById(R.id.lockerSetButton);
@@ -257,7 +247,5 @@ public class MenuFragment extends Fragment {
         });
 
         return v;
-        //return inflater.inflate(R.layout.fragment_menu, container, false);
     }
-
 }
