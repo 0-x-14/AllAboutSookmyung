@@ -6,64 +6,61 @@
     android:layout_height="match_parent"
     android:backgroundTint="@android:color/black">
 
-    <ImageView
-        android:id="@+id/page1_center"
-        android:layout_width="190dp"
-        android:layout_height="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        app:srcCompat="@drawable/tutorial_home" />
-
-    <ImageView
-        android:id="@+id/page1_right"
-        android:layout_width="100dp"
-        android:layout_height="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/page1_center"
-        app:layout_constraintTop_toTopOf="@+id/page1_center"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tutorial_gitar_cut" />
-
-    <ImageView
-        android:id="@+id/page1_left"
-        android:layout_width="100dp"
-        android:layout_height="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/page1_center"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/page1_center"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tutorial_map_cut" />
-
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="환영합니다!"
-        android:textSize="30dp"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/page1_center"
+
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="하단 탭을 통해 이동 가능"
-        android:textSize="25dp"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/page1_center"
-        app:layout_constraintVertical_bias="0.23000002" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="278dp"
+        android:layout_height="520dp"
+
+        android:layout_marginTop="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tutorial_main" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="233dp"
+        android:layout_height="479dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@drawable/tutorial_map" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="233dp"
+        android:layout_height="479dp"
+
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@drawable/tutorial_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
