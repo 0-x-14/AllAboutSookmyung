@@ -173,7 +173,7 @@ public class MapMyungsinFloor6Activity extends AppCompatActivity {
         r605Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("605", "앞문만", false, 0);
+                ClassInfoDialogFragment classInfoDialogFragment = ClassInfoDialogFragment.getInstance("605", "중문만", false, 0);
                 classInfoDialogFragment.show(getSupportFragmentManager(), "");
             }
         });

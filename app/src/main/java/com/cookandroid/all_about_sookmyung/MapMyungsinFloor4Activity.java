@@ -234,7 +234,7 @@ public class MapMyungsinFloor4Activity extends AppCompatActivity {
             }
         });
 
-        r410bBtn = (ImageButton) findViewById(R.id.room411b);
+        r410bBtn = (ImageButton) findViewById(R.id.room410b);
         r410bBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
