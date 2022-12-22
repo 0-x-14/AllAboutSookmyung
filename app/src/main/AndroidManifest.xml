@@ -41,6 +41,7 @@
         </activity>
         <activity android:name=".TutorialActivity" />
         <activity android:name=".PrintActivity"/>
+        <activity android:name=".TimeTableActivity"></activity>
         <activity android:name=".ClassActivity"></activity>
         <activity android:name=".ConvenientActivity"></activity>
         <activity android:name=".StudyroomActivity"></activity>

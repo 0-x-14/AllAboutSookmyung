@@ -88,7 +88,7 @@ public class ClassInfoDialogFragment extends androidx.fragment.app.DialogFragmen
         timeTableBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), TimeTableClass.class);
+                Intent intent = new Intent(getActivity(), TimeTableActivity.class);
                 startActivity(intent);
             }
         });
