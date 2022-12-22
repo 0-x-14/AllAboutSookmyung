@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="환영합니다!"
+        android:fontFamily="@font/nanumsquareroundbold"
         android:textColor="@color/white"
 
         android:textSize="40dp"
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="하단 탭을 통해 이동 가능"
+        android:fontFamily="@font/nanumsquareroundbold"
         android:textColor="@color/white"
 
         android:textSize="25dp"
