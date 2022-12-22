@@ -6,18 +6,21 @@
     <color name="dot_dark_screen2">#9FB1D9</color>
     <color name="dot_dark_screen3">#9FB1D9</color>
     <color name="dot_dark_screen4">#9FB1D9</color>
+    <color name="dot_dark_screen5">#9FB1D9</color>
 
     <!-- 선택된 점(해당 페이지 일 때) -->
-    <color name="dot_light_screen1">#405fa4</color>
-    <color name="dot_light_screen2">#405fa4</color>
-    <color name="dot_light_screen3">#405fa4</color>
-    <color name="dot_light_screen4">#405fa4</color>
+    <color name="dot_light_screen1">#D8DFF0</color>
+    <color name="dot_light_screen2">#D8DFF0</color>
+    <color name="dot_light_screen3">#D8DFF0</color>
+    <color name="dot_light_screen4">#D8DFF0</color>
+    <color name="dot_light_screen5">#D8DFF0</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>
         <item>@color/dot_light_screen2</item>
         <item>@color/dot_light_screen3</item>
         <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
     </array>
 
     <array name="array_dot_inactive">
@@ -25,6 +28,7 @@
         <item>@color/dot_dark_screen2</item>
         <item>@color/dot_dark_screen3</item>
         <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
     </array>
 
 </resources>

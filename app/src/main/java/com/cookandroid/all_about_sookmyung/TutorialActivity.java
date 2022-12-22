@@ -49,7 +49,8 @@ public class TutorialActivity extends AppCompatActivity {
                 R.layout.page1,
                 R.layout.page2,
                 R.layout.page3,
-                R.layout.page4
+                R.layout.page4,
+                R.layout.page5
         };
 
         // 하단 점 추가
