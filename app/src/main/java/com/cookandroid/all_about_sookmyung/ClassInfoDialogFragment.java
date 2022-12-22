@@ -2,6 +2,7 @@ package com.cookandroid.all_about_sookmyung;
 
 import android.app.*;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ public class ClassInfoDialogFragment extends androidx.fragment.app.DialogFragmen
     TextView roomNumberTextView, backdoorTextview, plugTextView, roomKindTextView;
     ImageView backdoorImageView, plugImageView, roomKindImageView;
     ImageButton exitBtn;
+    Button timeTableBtn;
 
     public ClassInfoDialogFragment (String roomName, String doorString, boolean plugExist, int roomKind) {
         this.roomName = roomName;
@@ -79,6 +81,15 @@ public class ClassInfoDialogFragment extends androidx.fragment.app.DialogFragmen
             @Override
             public void onClick(View view) {
                 dismiss();
+            }
+        });
+
+        timeTableBtn = (Button) view.findViewById(R.id.timeTableLinkBtn);
+        timeTableBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), TimeTableClass.class);
+                startActivity(intent);
             }
         });
 
