@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +22,10 @@ public class MapMyungsinFloor5Activity extends AppCompatActivity {
     ImageView main, locker;
 
     Button movementSub1, movementSub2, movementSub3, movementSub4, movementSub6, movementSub7;
+    ImageButton r501Btn, r502Btn, r503Btn, r503bBtn, r504Btn, r505Btn, r506aBtn, r506bBtn, r507aBtn,
+            r507bBtn, r508aBtn, r508bBtn, r509Btn, r511Btn, r513Btn, r514Btn, r516Btn, r517Btn,
+            r518Btn, r519Btn, r519aBtn, r520Btn, r521aBtn, r521Btn, r522Btn, r523Btn, r524Btn,
+            r524aBtn, r525Btn, r526Btn, r527Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
